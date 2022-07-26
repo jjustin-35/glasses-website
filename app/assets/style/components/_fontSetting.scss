@@ -1,0 +1,11 @@
+.font{
+    &--white{
+        color: white;
+    }
+    &--dark_red{
+        color: $fontColor;
+    }
+    &--red{
+        color: $subColor;
+    }
+}

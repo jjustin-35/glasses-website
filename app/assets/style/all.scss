@@ -1,0 +1,14 @@
+// utils
+@import './utils/variable';
+
+// base
+@import './base/reset';
+@import './base/base';
+
+// components
+@import './components/container';
+@import './components/fontSetting';
+
+// layout
+@import './layout/nav';
+@import './layout/footer';
