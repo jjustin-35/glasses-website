@@ -1,0 +1,27 @@
+.banner{
+    background-image: url('../images/home-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bannerWrap{
+    min-height: 787px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__content{
+        text-align: right;
+    }
+    &__btn{
+        padding: 6px 12px;
+    }
+}
+
+.intro{
+    background-color: $mainColor;
+    &Content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
