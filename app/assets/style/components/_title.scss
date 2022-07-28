@@ -3,4 +3,8 @@
     line-height: 72px;
     font-weight: bold;
     color: $fontColor;
+    text-align: center;
+    &--mb48{
+        margin-bottom: 48px;
+    }
 }

@@ -1,8 +1,27 @@
-*, ::after, ::before{
-    box-sizing: border-box;
-}
 
 .container{
-    max-width: 67.5%;
+    max-width: 1296px;
+    padding: 0 12px;
     margin: 0 auto;
+    &--sm{
+        max-width: 636px;
+    }
+}
+
+.block{
+    padding: 80px 0;
+}
+
+@media (max-width:992px){
+    .container{
+        max-width: 768px;
+        padding: 0 37px;
+    }
+}
+
+@media(max-width: 767px){
+    .container{
+        max-width: 375px;
+        padding: 0 14px;
+    }
 }

@@ -19,9 +19,155 @@
 
 .intro{
     background-color: $mainColor;
+    .title{
+        margin-bottom: 33px;
+    }
     &Content{
         display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        &__item{
+            width: 24%;
+            div, h3{
+                text-align: center;
+            }
+        }
+        &__icon{
+            width: 84px;
+        }
+    }
+}
+
+.sample{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item{
+        width: 32%;
+        img{
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        h3{
+            text-align: center;
+            font-size: 48px;
+            line-height: 72px;
+            font-style: italic;
+        }
+    }
+}
+
+.collab{
+    background-image: url('../images/index-bg.png');
+}
+.design{
+    display: flex;
+    justify-content: center;
+    &__item{
+        img{
+            width: 100%;
+        }
+        h3{
+            text-align: center;
+            font-size: 48px;
+            line-height: 72px;
+            font-style: italic;
+            background-color: white;
+        }
+    }
+}
+
+.customer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item{
+        width: 24%;
+        background-color: white;
+        box-shadow: 0px 2px 6px #00000029;
+        &:last-child{
+            margin-right: 0;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+}
+.comment{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__content{
+        margin-bottom: 72px;
+    }
+    &__name{
+        margin-bottom: 8px;
+    }
+}
+
+.contact{
+    background-color: $mainColor;
+    &__intro{
+        margin-bottom: 24px;
+    }
+    &Form{
+        &__input{
+            display: block;
+            margin-bottom: 16px;
+            textarea, input{
+                background-color: $mainColor;
+                width: 100%;
+                display: block;
+                padding: 6px 12px;
+                border: 1px solid black;
+                margin-top: 8px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        &__check{
+            display: block;
+            margin-bottom: 48px;
+        }
+    }
+}
+.submit{
+    display: block;
+    min-width: 416px;
+    padding: 16px 0;
+    margin: 0 auto;
+}
+
+@media(max-width: 992px){
+    .introContent__item{
+        width: 48%;
+        margin-bottom: 24px;
+        &:nth-last-child(-n+2){
+            margin-bottom: 0;
+        }
+    }
+    .sample{
         justify-content: center;
-        align-items: center;
+        &__item{
+            width: 60%;
+            margin-bottom: 24px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .design{
+        flex-wrap: wrap;
+    }
+    
+    .customer__item{
+        width: 49%;
+        margin-bottom: 24px;
+        &:nth-last-child(-n+2){
+            margin-bottom: 0;
+        }
     }
 }

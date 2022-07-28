@@ -6,12 +6,13 @@
 .block1{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid white;
 }
 .bottomMenu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 33%;
+    width: 80%;
     &__item{
         a{
             font-size: 16px;
@@ -25,9 +26,9 @@
 .socialIcons{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    width: 15%;
     &__icon{
-        margin-right: 32px;
         img{
             width: 48px;
             display: block;
@@ -37,17 +38,19 @@
         }
     }
 }
-.block2{
+.contactInfo{
     margin-top: 24px;
     padding-bottom: 32px;
-    border-bottom: 1px solid white;
 }
-.contact{
+.contactus{
     font-size: 36px;
     line-height: 54px;
+    &__icon{
+        margin-right: 22px;
+    }
 }
 
-.block3{
+.block2{
     margin: 32px 0;
     display: flex;
     justify-content: space-between;
@@ -57,4 +60,69 @@
     display: flex;
     justify-content: space-between;
     width: 15%;
+    a{
+        text-decoration: none;
+    }
+}
+
+@media (max-width:992px){
+    .policy{
+        width: 30%;
+    }
+    .socialIcons{
+        width: 25%;
+    }
+}
+
+@media (max-width: 767px){
+    .footer{
+        padding: 24px 0;
+    }
+    .block1{
+        margin-bottom: 16px;
+    }
+    .bottomMenu{
+        display: none;
+    }
+    .contactInfo{
+        margin-top: 0;
+        padding-bottom: 24px;
+    }
+    .contactus{
+        font-size: 16px;
+        line-height: 24px;
+        &__icon{
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 10px;
+        }
+    }
+
+    .socialIcons{
+        &__icon{
+            width: 25%;
+            img{
+                width: 24px;
+            }
+        }
+    }
+
+    .block2{
+        flex-direction: column;
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .copyright{
+        margin-bottom: 8px;
+    }
+    .policy{
+        flex-direction: column;
+        li{
+            margin-bottom: 8px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
 }

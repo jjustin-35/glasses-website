@@ -23,8 +23,38 @@
         }
     }
 }
+.burgerMenu{
+    display: none;
+    padding: 20px 0;
+    span{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
 
 .logo{
     width: 80px;
 }
 
+@media(max-width:767px){
+    .headerWrap{
+        flex-wrap: wrap;
+    }
+    .burgerMenu{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+        width: 100%;
+        a{
+            width: 100%;
+            text-align: center;
+        }
+        li:last-child{
+            a{
+                padding-right: 32px;
+            }
+        }
+    }
+}
