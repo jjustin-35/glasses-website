@@ -60,6 +60,8 @@
 
 .collab{
     background-image: url('../images/index-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .design{
     display: flex;
@@ -74,6 +76,12 @@
             line-height: 72px;
             font-style: italic;
             background-color: white;
+        }
+    }
+    &__img{
+        
+        &--mobile{
+            display: none;
         }
     }
 }
@@ -159,8 +167,14 @@
             }
         }
     }
+    .collab{
+        background-image: url('../images/index-bg-md.png');
+    }
     .design{
         flex-wrap: wrap;
+        &__item{
+            margin-bottom: 24px;
+        }
     }
     
     .customer__item{
@@ -169,5 +183,49 @@
         &:nth-last-child(-n+2){
             margin-bottom: 0;
         }
+    }
+}
+
+@media (max-width: 767px){
+    .banner{
+        background-image: url('../images/home-header-sm.png');
+        &Wrap{
+            min-height: 396px;
+        }
+    }
+
+    .introContent__item{
+        width: 100%;
+    }
+
+    .sample__item{
+        width: 100%;
+    }
+
+    .collab{
+        background-image: url('../images/index-bg-sm.png');
+    }
+    .design{
+        &__img{
+            &--pc{
+                display: none;
+            }
+            &--mobile{
+                display: block;
+            }
+        }
+    }
+
+    .customer__item{
+        width: 100%;
+        margin-bottom: 16px;
+        &:nth-child(3){
+            margin-bottom: 16px;
+        }
+    }
+
+    .submit{
+        min-width: 0;
+        width: 100%;
     }
 }

@@ -4,7 +4,17 @@
     font-weight: bold;
     color: $fontColor;
     text-align: center;
-    &--mb48{
+    &--mb{
         margin-bottom: 48px;
+    }
+}
+
+@media(max-width:767px){
+    .title{
+        font-size: 24px;
+        line-height: 36px;
+        &--mb{
+            margin-bottom: 24px;
+        }
     }
 }
