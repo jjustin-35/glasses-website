@@ -1,10 +1,36 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="zh-tw">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container headerWrap">
+      <img src="./assets/images/logo-white.png" alt="logo" class="logo">
+      <div class="burgerMenu">
+        <span class="material-icons-outlined font--white">
+          menu
+          </span>
+      </div>
+      <ul class="menu">
+        <li><a href="#">系列鏡框</a></li>
+        <li><a href="#">門市據點</a></li>
+        <li><a href="#">部落格</a></li>
+        <li><a href="#">常見問題</a></li>
+      </ul>
+    </div>
+    
+  </header>
+
+  
 <section class="banner">
   <div class="container bannerWrap">
     <div class="bannerWrap__content font--dark_red">
@@ -166,3 +192,42 @@ current: index
     </form>
   </div>
 </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="block1">
+        <div>
+          <ul class="bottomMenu">
+            <li class="bottomMenu__item"><a href="" class="font--white">首頁</a></li>
+            <li class="bottomMenu__item"><a href="" class="font--white">系列鏡框</a></li>
+            <li class="bottomMenu__item"><a href="" class="font--white">門市據點</a></li>
+            <li class="bottomMenu__item"><a href="" class="font--white">部落格</a></li>
+            <li class="bottomMenu__item"><a href="" class="font--white">常見問題</a></li>
+          </ul>
+          <div class="contactInfo">
+            <p class="contactus font--white"><span class="material-icons-outlined contactus__icon font--36">call</span>0800-000-000</p>
+            <p class="contactus font--white"><span class="material-icons-outlined contactus__icon font--36">email</span>glasses@business.com</p>
+          </div>
+        </div>
+        
+        <ul class="socialIcons">
+          <li class="socialIcons__icon"><a href=""><img src="./assets/images/ic-social-fb.png" alt="ic-social-fb"></a></li>
+          <li class="socialIcons__icon"><a href=""><img src="./assets/images/ic_social_ig.png" alt="ic_social_ig"></a></li>
+          <li class="socialIcons__icon"><a href=""><img src="./assets/images/ic_social_line.png" alt="ic_social_line"></a></li>
+        </ul>
+      </div>
+
+      <div class="block2">
+        <p class="copyright font--white">Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="policy">
+          <li><a href="" class="font--white">隱私權政策</a></li>
+          <li><a href="" class="font--white">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
