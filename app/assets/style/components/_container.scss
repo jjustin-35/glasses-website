@@ -1,24 +1,30 @@
 
 .container{
     max-width: 1296px;
-    padding: 0 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     margin: 0 auto;
     &--sm{
         max-width: 636px;
     }
     @include tablet(){
         max-width: 768px;
-        padding: 0 36px;
+        padding-left: 36px;
+        padding-right: 36px;
     }
     @include mobile(){
         max-width: 375px;
-        padding: 0 14px;
+        padding-left: 14px;
+        padding-right: 14px;
     }
 }
 
 .block{
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
     @include mobile(){
-        padding: 40px 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
     }
 }

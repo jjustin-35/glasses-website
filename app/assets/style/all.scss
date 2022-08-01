@@ -5,6 +5,9 @@
 @import './base/reset';
 @import './base/base';
 
+// grid
+@import './gird';
+
 // components
 @import './components/container';
 @import './components/title';
@@ -20,4 +23,4 @@
 
 // pages
 @import './pages/index';
-@import './pages/optical';
+@import './pages/glasses';
