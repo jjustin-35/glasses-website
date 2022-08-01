@@ -32,6 +32,13 @@
             div, h3{
                 text-align: center;
             }
+            @include tablet(){
+                width: 48%;
+                margin-bottom: 24px;
+                &:nth-last-child(-n+2){
+                    margin-bottom: 0;
+                }
+            }
         }
         &__icon{
             width: 84px;
@@ -150,13 +157,6 @@
 }
 
 @media(max-width: 992px){
-    .introContent__item{
-        width: 48%;
-        margin-bottom: 24px;
-        &:nth-last-child(-n+2){
-            margin-bottom: 0;
-        }
-    }
     .sample{
         justify-content: center;
         &__item{

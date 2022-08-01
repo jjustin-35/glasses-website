@@ -1,0 +1,60 @@
+.header{
+    background-color: $subColor;
+}
+.headerWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 30px;
+    a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 25px 32px;
+    }
+    li:last-child{
+        a{
+            padding-right: 0;
+        }
+    }
+}
+.burgerMenu{
+    display: none;
+    padding: 20px 0;
+    span{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+.logo{
+    width: 80px;
+}
+
+@media(max-width:767px){
+    .headerWrap{
+        flex-wrap: wrap;
+    }
+    .burgerMenu{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+        width: 100%;
+        a{
+            width: 100%;
+            text-align: center;
+        }
+        li:last-child{
+            a{
+                padding-right: 32px;
+            }
+        }
+    }
+}

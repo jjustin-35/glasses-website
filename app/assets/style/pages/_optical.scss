@@ -1,0 +1,54 @@
+.opticalBanner{
+    display: flex;
+    img{
+        width: 50%;
+    }
+}
+
+.enTitle{
+    font-size: 42px;
+    line-height: 63px;
+    text-align: center;
+}
+.chTitle{
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.opticalItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.opticalItem{
+    width: 24%;
+    margin-bottom: 80px;
+    img{
+        display: block;
+        width: 100%;
+    }
+    &__subtitles{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__colors{
+        display: flex;
+        justify-content: flex-start;
+        &--brown{
+            background-color: #5F3E2D;
+            border-radius: 4px;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        &--orange{
+            background-color: #B75929;
+            border-radius: 4px;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

@@ -8,13 +8,16 @@
 // components
 @import './components/container';
 @import './components/title';
+@import './components/components';
 @import './components/btn';
 @import './components/fontSetting';
 
 
 // layout
-@import './layout/nav';
+@import './layout/header';
 @import './layout/footer';
+@import './layout/nav';
 
 // pages
 @import './pages/index';
+@import './pages/optical';

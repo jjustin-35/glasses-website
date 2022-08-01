@@ -1,0 +1,27 @@
+.pageMenu{
+    display: flex;
+    justify-content: center;
+    a{
+        display: block;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 12px 16px;
+        text-decoration: none;
+        color: black;
+        border: 1px solid #555555;
+        transition: all 0.25s ease;
+        &:hover{
+            color: white;
+            background-color: black;
+        }
+    }
+    &--active{
+        a{
+            color: white;
+            background-color: black;
+        }
+    }
+    li:last-child{
+        background-color: #f2f2f2;
+    }
+}
